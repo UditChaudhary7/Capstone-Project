@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UrbanGhar - Find Your Dream Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <a href="#" id="logo">UrbanGhar</a>
+        <nav>
+            <ul>
+                <li><a href="#listings">Buy</a></li>
+                <li><a href="#rent">Rent</a></li>
+                <li><a href="#sell">Sell</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="signup.ht">Sign Up</a></li>
+                <li><a href="#Aboutus">About Us</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Find your way home.</h1>
+        <p>Search millions of listings with our immersive property view.</p>
+        
+        <form action="#" method="get" class="search-form">
+            <input type="text" placeholder="Enter an address, neighborhood, or city">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <div class="container">
+        
+        <h2 id="listings" class="section-title">Current Listings</h2>
+        <ol style="margin-bottom: 30px; margin-left: 20px; color: #596b82;">
+            <li>Browse properties</li>
+            <br>
+            <li>Schedule a tour</li>
+            <br>
+            <li>Make an offer</li>
+            <br>
+        </ol>
+
+        <div class="listings-grid">
+            <div class="card">
+                <img src="https://cdn.luxury-houses.net/wp-content/uploads/2020/08/Exquisite-Los-Angeles-Modern-House-215-N-Saltair-Ave-1.jpg" alt="Modern Luxury Houses">
+                <span class="status-badge">For Sale</span>
+                <div class="card-content">
+                    <h3>Modern Luxury House</h3>
+                    <div class="price-tag">Rs 32.58 Cr</div>
+                    <p>Gurgaon, Haryana</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://img.vistarooms.com/gallery/elm-at-driftwood-cottage-fa095e.jpg" alt="Cozy Cottage">
+                <span class="status-badge" style="background-color: #ffebeb; color: #d93c23;">New</span>
+                <div class="card-content">
+                    <h3>Cozy Cottage</h3>
+                    <div class="price-tag">Rs 95 Lakhs</div>
+                    <p>Shimla, HP</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://cdn-bnokp.nitrocdn.com/QNoeDwCprhACHQcnEmHgXDhDpbEOlRHH/assets/images/optimized/rev-e8b8dfd/www.decorilla.com/online-decorating/wp-content/uploads/2021/05/Ideas-to-design-your-apartment-by-Decorilla-designer-Megan-W-2048x1364.jpg" alt="Downtown Apartment">
+                <div class="card-content">
+                    <h3>City Apartment</h3>
+                    <div class="price-tag">Rs 13.98 Cr</div>
+                    <p>Malabar Hills, Mumbai</p>
+                </div>
+            </div>
+
+        </div>
+
+        <h2 class="section-title">Market Comparison</h2>
+        <div class="table-wrapper">
+            <table>
+                <caption>Data based on Q3 2023 Real Estate Average</caption>
+                <thead>
+                    <tr>
+                        <th>Feature</th>
+                        <th>EstateZ Listings</th>
+                        <th>Competitor Avg</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Avg Price / SqFt</td>
+                        <td>Rs 16,500</td>
+                        <td>Rs 20,000</td>
+                    </tr>
+                    <tr>
+                        <td>Days on Market</td>
+                        <td>14 Days</td>
+                        <td>28 Days</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Overall Rating</td>
+                        <td>4.9/5</td>
+                        <td>4.2/5</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="contact-section" id="contact">
+            <form action="/submit-inquiry" method="POST">
+                <fieldset>
+                    <legend>Contact Agent</legend>
+                    
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="fullname" placeholder="Your Name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="name@mail.com" required>
+
+                    <label for="interest">I am interested in:</label>
+                    <select id="interest" name="interest">
+                        <option value="buying">Buying a Home</option>
+                        <option value="renting">Renting</option>
+                        <option value="selling">Selling my Home</option>
+                    </select>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="I'm interested in the Villa..."></textarea>
+
+                    <button type="submit" class="submit-btn">Send Inquiry</button>
+                </fieldset>
+            </form>
+        </div>
+
+    </div>
+<div id="get-help-widget" aria-label="Get help">
+ 
+<a href="help.html"><button class="get-help-btn">Get Help</button></a>
+</div>
+
+    <footer>
+        <p>&copy; 2023 EstateZ. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
