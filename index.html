@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UrbanGhar - Find Your Dream Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
     <header>
         <a href="#" id="logo">UrbanGhar</a>
         <nav>
@@ -16,32 +17,27 @@
                 <li><a href="#rent">Rent</a></li>
                 <li><a href="#sell">Sell</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="signup.ht">Sign Up</a></li>
-                <li><a href="#Aboutus">About Us</a> </li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="#Aboutus">About Us</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="hero">
-        <h1>Find your way home.</h1>
+        <h1 id="hero-title">Find your way home.</h1>
         <p>Search millions of listings with our immersive property view.</p>
-        
-        <form action="#" method="get" class="search-form">
-            <input type="text" placeholder="Enter an address, neighborhood, or city">
-            <button type="submit">Search</button>
+        <form action="#" method="get" class="search-form" id="searchForm">
+            <input type="text" placeholder="Enter an address, neighborhood, or city" id="searchInput">
+            <button type="submit" id="searchBtn">Search</button>
         </form>
     </div>
 
     <div class="container">
-        
-        <h2 id="listings" class="section-title">Current Listings</h2>
+        <h2 class="section-title" id="listings">Current Listings</h2>
         <ol style="margin-bottom: 30px; margin-left: 20px; color: #596b82;">
-            <li>Browse properties</li>
-            <br>
-            <li>Schedule a tour</li>
-            <br>
-            <li>Make an offer</li>
-            <br>
+            <li>Browse properties</li><br>
+            <li>Schedule a tour</li><br>
+            <li>Make an offer</li><br>
         </ol>
 
         <div class="listings-grid">
@@ -73,7 +69,6 @@
                     <p>Malabar Hills, Mumbai</p>
                 </div>
             </div>
-
         </div>
 
         <h2 class="section-title">Market Comparison</h2>
@@ -110,40 +105,38 @@
         </div>
 
         <div class="contact-section" id="contact">
-            <form action="/submit-inquiry" method="POST">
+            <form action="/submit-inquiry" method="POST" id="contactForm">
                 <fieldset>
                     <legend>Contact Agent</legend>
-                    
                     <label for="name">Full Name</label>
                     <input type="text" id="name" name="fullname" placeholder="Your Name" required>
-
                     <label for="email">Email Address</label>
                     <input type="email" id="email" name="email" placeholder="name@mail.com" required>
-
                     <label for="interest">I am interested in:</label>
                     <select id="interest" name="interest">
                         <option value="buying">Buying a Home</option>
                         <option value="renting">Renting</option>
                         <option value="selling">Selling my Home</option>
                     </select>
-
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="4" placeholder="I'm interested in the Villa..."></textarea>
-
-                    <button type="submit" class="submit-btn">Send Inquiry</button>
+                    <button type="submit" class="submit-btn" id="submitBtn">Send Inquiry</button>
+                    <p id="formStatus" style="color: green; margin-top: 15px; display: none;">Inquiry sent successfully!</p>
                 </fieldset>
             </form>
         </div>
 
     </div>
-<div id="get-help-widget" aria-label="Get help">
- 
-<a href="help.html"><button class="get-help-btn">Get Help</button></a>
-</div>
+
+    <div aria-label="Get help">
+        <a href="help.html"><button class="get-help-btn" id="helpBtn">Get Help</button></a>
+    </div>
 
     <footer>
         <p>&copy; 2023 EstateZ. All rights reserved.</p>
     </footer>
 
+    <script src="index.js"></script>
 </body>
+
 </html>
